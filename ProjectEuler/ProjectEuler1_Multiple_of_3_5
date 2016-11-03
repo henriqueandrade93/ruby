@@ -1,0 +1,15 @@
+#!/bin/ruby
+
+t = gets.strip.to_i
+for a0 in (0..t-1)
+  n = gets.strip.to_i
+  sum = 0
+  n.times do |i|
+    if i%3 == 0
+      sum += i
+    elsif i%5 == 0
+      sum += i
+    end
+  end
+  puts sum
+end
